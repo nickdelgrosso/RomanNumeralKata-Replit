@@ -3,17 +3,17 @@ import pytest
 
 # Source Code:
 
-def from_roman(num: int) -> str:
-  return 'a'
+def from_roman(roman: str) -> int:
+  return 100
 
 
 
 # Tests: 
 
 cases = [
-  (1, 'I'),
-  # (2, 'II'),
-  # (3, 'III'),
+  ('I', 1),
+  # ('II', 2),
+  # ('III', 3),
 ]
 @pytest.mark.parametrize(['num', 'roman'], cases)
 def test_roman_1(num: int, roman: str):
